@@ -1,8 +1,8 @@
-package basicjavacode;
+package basicjava;
 
 import java.util.Scanner;
 
-public class StringReverse {
+public class PalindromeString {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -24,15 +24,17 @@ public class StringReverse {
         char[] arr = a.toCharArray();
 
         int start = 0;
-        int end = arr.length - 1;
+        int end = a.length() - 1;
+        boolean isPalindrome = true;
 
         while (start < end) {
-            char temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
+            if (a.charAt(start) != a.charAt(end)) {
+                isPalindrome = false;
+                break;
+            }
             start++;
             end--;
         }
-        System.out.println(new String(arr));
+        System.out.println(isPalindrome ? "Palindrome" : "Not Palindrome");
     }
 }

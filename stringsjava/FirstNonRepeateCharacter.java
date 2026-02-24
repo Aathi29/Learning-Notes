@@ -1,4 +1,4 @@
-package stringscode;
+package stringsjava;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -8,7 +8,8 @@ public class FirstNonRepeateCharacter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String");
-        String str = sc.nextLine();
+        String a = sc.nextLine();
+        String str = a.toLowerCase();
         HashMap<Character, Integer> map = new HashMap<>();
 
         // Count frequency

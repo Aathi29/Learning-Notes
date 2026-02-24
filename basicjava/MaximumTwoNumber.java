@@ -1,8 +1,15 @@
-package basicjavacode;
+package basicjava;
 
 import java.util.Scanner;
 
-public class LCM {
+public class MaximumTwoNumber {
+
+    static int maximum(int a, int b) {
+        if (a > b) {
+            return a;
+        }
+        return b;
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -10,14 +17,6 @@ public class LCM {
         int a = sc.nextInt();
         System.out.println("Enter the second number");
         int b = sc.nextInt();
-        int x = a;
-        int y = b;
-        while (y != 0) {
-            int temp = y;
-            y = x % y;
-            x = temp;
-        }
-        int lcm = (a * b) / x;
-        System.out.println(lcm);
+        System.out.println("Maximum of two numbers " + maximum(a, b));
     }
 }
