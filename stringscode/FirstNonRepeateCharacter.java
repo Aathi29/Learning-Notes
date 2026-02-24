@@ -8,7 +8,7 @@ public class FirstNonRepeateCharacter {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String");
-        String str;
+        String str = sc.nextLine();
         HashMap<Character, Integer> map = new HashMap<>();
 
         // Count frequency

@@ -1,7 +1,8 @@
+package basicjavacode;
 
 import java.util.Scanner;
 
-public class SwapTwoNumbers {
+public class LCM {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -9,9 +10,14 @@ public class SwapTwoNumbers {
         int a = sc.nextInt();
         System.out.println("Enter the second number");
         int b = sc.nextInt();
-        a = a + b;
-        b = a - b;
-        a = a - b;
-        System.out.println("a" + a + "b" + b);
+        int x = a;
+        int y = b;
+        while (y != 0) {
+            int temp = y;
+            y = x % y;
+            x = temp;
+        }
+        int lcm = (a * b) / x;
+        System.out.println(lcm);
     }
 }
