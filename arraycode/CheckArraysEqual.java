@@ -1,4 +1,4 @@
-package array;
+package arraycode;
 
 import java.util.Scanner;
 
@@ -25,8 +25,8 @@ public class CheckArraysEqual {
             }
         }
         if (isEqual) {
-            System.out.println("Arrays are equal"); 
-        }else {
+            System.out.println("Arrays are equal");
+        } else {
             System.out.println("Arrays are not equal");
         }
     }
