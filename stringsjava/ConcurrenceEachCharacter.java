@@ -23,5 +23,6 @@ public class ConcurrenceEachCharacter {
         for (char key : map.keySet()) {
             System.out.println(key + " -> " + map.get(key));
         }
+        sc.close();
     }
 }
